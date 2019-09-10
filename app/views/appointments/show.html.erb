@@ -1,1 +1,3 @@
-<%= 
+<%= @appointment.patient.name %>'s appointment at 
+<%= @appointment.appointment_datetime.strftime("%B %e, %Y at %k:%M") %> 
+with <%= @appointment.doctor.name %>

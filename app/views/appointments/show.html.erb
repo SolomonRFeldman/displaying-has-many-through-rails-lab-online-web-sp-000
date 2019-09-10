@@ -1,3 +1,3 @@
-<%= @appointment.patient.name %>'s appointment at 
+<%= link_to @appointment.patient.name, patient_path(@appointment.patient) %>'s appointment at 
 <%= @appointment.appointment_datetime.strftime("%B %e, %Y at %k:%M") %> 
-with <%= @appointment.doctor.name %>
+with <%= link_to @appointment.doctor.name, doctor_path(@appointment.doctor) %>
